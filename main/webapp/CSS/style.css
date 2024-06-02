@@ -1,0 +1,699 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+*::-webkit-scrollbar {
+    display: none;
+}
+
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #fff;
+    width:100%;
+}
+
+
+
+/* =================================================================================================================================================================
+	**************************      NAV.CSS            ***********************************
+=====================================================================================================================================================================
+*/
+
+nav {
+    height: 8vh;
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 1.125rem;
+    background-color: #252525;
+    color: #adb5bd;
+}
+
+nav ul {
+    display: flex;
+    max-width: 60%;
+    list-style: none;
+    justify-content: space-between;
+}
+
+.nav-link {
+    padding: 10px;
+}
+
+.nav-link a {
+    color: #adb5bd;
+    font-size:12px;
+    text-decoration: none;
+}
+
+.nav-link a:hover {
+    border-bottom: 1px solid #adb5bd;
+}
+
+nav ul .dropdown {
+  margin-left: 15px;
+}
+
+
+nav ul .dropdown {
+  position: relative;
+}
+
+nav ul .dropdown__content {
+  position: absolute;
+  top: 90%;
+  width: 150px;
+  background-color: white;
+  border: 1px solid #252525;
+  color: #252525;
+  margin-top: 5px;
+  display: none;
+  overflow: hidden;
+  z-index: 10;
+}
+nav ul .dropdown__content a {
+  padding: 5px;
+  text-decoration: none;
+  color: #252525;
+}
+nav ul .dropdown__content a:hover {
+  background-color:#252525 ;
+  color: #fff;
+}
+
+nav ul .dropdown:hover .dropdown__content {
+  display: flex;
+  flex-direction: column;
+}
+
+/* ========================================================================================================================================================
+		**************************      HEADER.CSS            ***********************************
+============================================================================================================================================================
+*/
+
+header {
+    height: 12vh;
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.625rem 3.125rem;
+    background-color: #fff;
+    color: #252525;
+    ;
+}
+
+.logo {
+    flex: 0.4;
+}
+
+.logo img {
+    height: 2.5rem;
+    width: "100%";
+}
+
+.header-links {
+    flex: 0.5;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-links select {
+    background-color: transparent;
+    border: none;
+    padding: 0 1em 0 0;
+    outline: none;
+    cursor: pointer;
+}
+
+
+/* ===================================================================================================================================================================
+					**************************      INDEX.CSS            ***********************************
+===========================================================================================================================================================================
+*/
+
+.coursel {
+    height: 30vh;
+    background-image: url(../images/Carousel1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.coursel-arrows {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    font-size: 32px;
+    padding: 0.625rem 3.125rem;
+    color: #fff;
+    opacity: 70%;
+}
+
+.coursel-arrows i {
+    cursor: pointer;
+}
+
+.products-view {
+    padding: 0.625rem;
+}
+
+.products-section .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.625rem 3.125rem;
+    color: #adb5bd;
+}
+
+.products-section .header h2 {
+    font-size: 1.25rem;
+}
+
+.products-section .header button {
+    padding: 8px 1rem;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #0077b6;
+    cursor: pointer;
+}
+
+.products-section .header button:hover {
+    background-color: #0096c7;
+}
+
+.products-section .products-list {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.125rem;
+}
+
+.products-section .products-list .product {
+    height: 18.75rem;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.products-section .products-list .product img {
+    height: 8rem;
+    width: 100%;
+    object-fit: contain;
+}
+
+.product .product-details {
+    padding: 0.625rem;
+    text-align: center;
+}
+
+.product-details h3 {
+    font-size: 1rem;
+    color: #252525;
+    font-weight: 600;
+    padding: 0 0 5px 0;
+    width: 150px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.product-details p {
+    font-size: 0.875rem;
+    color: #252525;
+    padding: 0 0 5px 0;
+}
+
+.product-details button {
+    font-size: 1rem;
+    color: #fff;
+    background-color: #0077b6;
+    display: block;
+    width: 100%;
+    padding: 8px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.product-details button:hover {
+    background-color: #0096c7;
+}
+
+.banners-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.125rem;
+}
+
+.banner1 {
+    height: 12rem;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.banner1 img {
+    height: 11rem;
+    width: 100%;
+    object-fit: contain;
+}
+
+
+/* ========================================================================================================================================================
+	**************************     SIGN IN  SIGN UP .CSS            ***********************************
+=============================================================================================================================================================
+*/
+
+.banner {
+    height: 8vh;
+    padding: 0.625rem 3.125rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-image: url(../images/texture-bw.png);
+    color: #252525;
+}
+
+.banner-links {
+    display: flex;
+    padding: 0.625rem;
+    color: #252525;
+    cursor: pointer;
+}
+
+.banner-links .banner-link {
+    list-style: none;
+    margin-left: 20px;
+}
+
+.active {
+    color: #0077b6;
+}
+
+.form-container {
+    padding: 0.625rem 6.25rem;
+    display: flex;
+}
+
+.container {
+    max-width: 50%;
+    border-top: 1px solid #ced4da;
+    border-bottom: 1px solid #ced4da;
+    margin: 10px;
+    padding-top: 1rem;
+    color: #495057;
+}
+
+.container h2 {
+    font-size: 1.75rem;
+    padding-top: 0.625rem;
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+
+.container h3 {
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+    font-weight: 500;
+}
+
+.container p {
+    font-size: 0.875rem;
+    padding-top: 0.625rem;
+}
+
+.container .faq {
+    color: #595959;
+}
+
+form {
+    padding: 1.25rem 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    color: #252525;
+}
+
+form label {
+    padding: 0.625rem 0;
+    font-weight: 600;
+}
+
+.form-group input {
+    padding: 0.525rem;
+    border: 0.00875rem solid #ced4da;
+    border-radius: 5px;
+    outline: none;
+}
+
+.form-group input:focus {
+    border: 1px solid #0077b6;
+}
+
+.form-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.25rem;
+}
+
+.form-button .error {
+    color: #d90429;
+}
+
+.form-button .valid {
+    color: #2dc653;
+}
+
+.form-button button {
+    padding: 0.625rem 1rem;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 600;
+    background-color: white;
+    text-align: center;
+    color: #252525;
+}
+
+.form-button button:hover {
+    background-color: #252525;
+    color: #fff;
+    transition: all 500ms ease-in-out;
+}
+
+.form-button .checkbox {
+    padding-top: 0.625rem;
+    display: flex;
+    align-items: center;
+}
+
+.form-button .checkbox input {
+    cursor: pointer;
+}
+
+.form-button .checkbox label {
+    margin-left: 0.625rem;
+}
+
+
+/* ===================================================================================================================================================================
+					**************************     FOOTER .CSS            ***********************************
+==================================================================================================================================================================
+*/
+
+footer {
+    background-color: #595959;
+    display: flex;
+    justify-content: space-between;
+    padding: 0.625rem 3.125rem;
+}
+
+.footer-group {
+    display: flex;
+}
+
+.footer-content {
+    padding: 0 1.25rem;
+}
+
+footer .footer-content h3 {
+    color: #fff;
+}
+
+footer .footer-content p {
+    color: #adb5bd;
+    font-size: 14px;
+    padding: 0.875rem 0;
+}
+
+footer .footer-content .newsletter {
+    padding: 1.125rem 0;
+    border-top: 1px solid #fff;
+}
+
+footer .footer-content .newsletter .newsletter-input {
+    display: flex;
+    padding: 0.625rem 0;
+}
+
+footer .footer-content .newsletter .newsletter-input input {
+    padding: 0.625rem;
+    border: none;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    width: 80%;
+    background-color: #fff;
+}
+
+footer .footer-content .newsletter .newsletter-input button {
+    padding: 0.625rem 1rem;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    background-color: #0077b6;
+    color: #fff;
+    text-align: center;
+    outline: none;
+    cursor: pointer;
+}
+
+.footer-content .blog-post {
+    display: flex;
+    align-items: center;
+}
+
+.footer-content .blog-post h4 {
+    color: #fff;
+    padding: 0.625rem;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+.footer-content .blog-post h4:hover {
+    text-decoration: underline;
+}
+
+.footer-content h4 {
+    color: #fff;
+    padding: 0.625rem 0;
+    font-size: 0.875rem;
+}
+
+.footer-content .contact-cta {
+    padding: 12px 16px;
+    outline: none;
+    border: none;
+    background-color: #2dc653;
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: 600;
+    margin: 1.25rem 0;
+    cursor: pointer;
+}
+
+.footer-content .image-row {
+    display: flex;
+    padding: 1.125rem;
+}
+
+.footer-content .image-row img {
+    height: 5rem;
+    width: 5rem;
+    margin: 5px;
+}
+
+.footer-black {
+    background-color: #040404;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    padding: 0.625rem 3.125rem;
+}
+/* ===================================================================================================================================================================
+					**************************     PASSWORD .CSS            ***********************************
+==================================================================================================================================================================
+*/
+
+
+.password-change-container {
+	padding: 0.625rem 6.25rem;
+	height: fit-content;
+ 	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+
+/* ===================================================================================================================================================================
+					**************************     Profile Update  .CSS            ***********************************
+==================================================================================================================================================================
+*/
+.banner {
+    height: 8vh;
+    padding: 0.625rem 3.125rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-image: url(../images/texture-bw.png);
+    color: #252525;
+}
+
+.banner-links {
+    display: flex;
+    padding: 0.625rem;
+    color: #252525;
+    cursor: pointer;
+}
+
+.banner-links .banner-link {
+    list-style: none;
+    margin-left: 20px;
+}
+
+.active {
+    color: #0077b6;
+}
+
+.form-container {
+    padding: 0.625rem 3.25rem;
+    display: flex;
+}
+
+.sign-up {
+    padding: 0.625rem 1.25rem;
+}
+
+.container-profile {
+    width: 820px;
+    margin: 10px;
+    padding: 1rem 1.25rem 0rem 1.25rem;
+    color: #495057;
+}
+
+.container-profile h2 {
+    font-size: 1.25rem;
+    padding-top: 0.625rem;
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+
+.container-profile h3 {
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+    font-weight: 500;
+}
+
+.container-profile p {
+    font-size: 0.875rem;
+    padding-top: 0.625rem;
+}
+
+.container-profile .faq {
+    color: #595959;
+}
+
+form {
+    padding: 1.25rem 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    color: #252525;
+}
+
+form label {
+    padding: 0.625rem 0;
+    font-weight: 600;
+}
+
+.form-group input {
+    padding: 0.525rem;
+    border: 0.00875rem solid #ced4da;
+    border-radius: 5px;
+    outline: none;
+}
+
+.form-group input:focus {
+    border: 1px solid #0077b6;
+}
+
+.form-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.25rem;
+}
+
+.form-button .error {
+    color: #d90429;
+}
+
+.form-button .valid {
+    color: #2dc653;
+}
+
+.form-button button {
+    padding: 0.625rem 1rem;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 600;
+    background-color: white;
+    text-align: center;
+    color: #252525;
+}
+
+.form-button button:hover {
+    background-color: #252525;
+    color: #fff;
+    transition: all 500ms ease-in-out;
+}
+
+.form-button .checkbox {
+    padding-top: 0.625rem;
+    display: flex;
+    align-items: center;
+}
+
+.form-button .checkbox input {
+    cursor: pointer;
+}
+
+.form-button .checkbox label {
+    margin-left: 0.625rem;
+}
+
+.bottom {
+    border-bottom: 1px solid #ced4da;
+}
+
+.v {
+    border-right: 1px solid #ced4da;
+}
